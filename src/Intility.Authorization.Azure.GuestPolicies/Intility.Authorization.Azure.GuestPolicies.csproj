@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net7.0;net6.0</TargetFrameworks>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AssemblyName>Intility.Authorization.Azure.GuestPolicies</AssemblyName>
+    <title>Intility.Authorization.Azure.GuestPolicies</title>
+    <authors>Thorstein Løkensgard</authors>
+    <owners>Intility</owners>
+    <Company>Intility</Company>
+    <description>Add deny guest policy to the azure authorization.</description>
+    <PackageTags>deny guests; deny; guests;</PackageTags>
+    <PackageReadMeFile>README.md</PackageReadMeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RepositoryUrl></RepositoryUrl>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Identity.Web" Version="2.15.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authorization" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="$(AssemblyName).Tests" />
+  </ItemGroup>
+
+</Project>
