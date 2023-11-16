@@ -24,4 +24,6 @@ jobs:
       - name: Pack
         run: dotnet pack --configuration Release --no-build --output output /property:Version=${{  github.ref_name }}"
       - name: Push
-        run: dotnet nuget push output/*.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} --skip-duplicate
+        run: dotnet nuget push output/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $NUGET_AUTH_TOKEN --skip-duplicate
+        env:
+          NUGET_AUTH_TOKEN: ${{ secrets.NUGET_API_KEY }}
