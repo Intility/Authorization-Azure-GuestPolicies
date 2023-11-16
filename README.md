@@ -10,6 +10,9 @@ Install-Package Intility.Authorization.Azure.GuestPolicies
 Then, add the policy to the `AuthorizationPolicyBuilder`:
 
 ```csharp
+
+builder.Services.AddDenyGuestsAuthorization();
+
 builder.Services.AddAuthorization(options =>
 {
     options.DefaultPolicy = new AuthorizationPolicyBuilder()
