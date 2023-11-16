@@ -25,12 +25,12 @@ jobs:
         run: dotnet build
       - name: Test with the dotnet CLI
         run: dotnet test --logger "junit;LogFileName=coverage.trx" --no-restore --results-directory "output/test-results" /property:CollectCoverage=True /property:CoverletOutputFormat=opencover /property:CoverletOutput=/output/test-results/coverage.cobertura.xml --collect:"XPlat Code Coverage"
-      - name: Upload dotnet test results
+      - name: Save artifacts from tests
         uses: actions/upload-artifact@v3
         with:
           name: test-results
           path: output/test-results
-      - name: Upload Coverage
+      - name: Upload Coverage to codecov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
