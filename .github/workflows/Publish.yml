@@ -7,7 +7,7 @@ on:
 
 jobs:
   ubuntu-latest:
-    name: ubuntu-latest
+    name: Publish nuget
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
