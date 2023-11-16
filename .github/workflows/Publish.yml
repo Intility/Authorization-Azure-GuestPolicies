@@ -22,7 +22,7 @@ jobs:
       - name: Build
         run: dotnet build --configuration Release --no-restore
       - name: Pack
-        run: dotnet pack --configuration Release --no-build --output output /property:Version=${{  github.ref_name }}"
+        run: dotnet pack --configuration Release --no-build --output output /property:Version="${{  github.ref_name }}"
       - name: Push
         run: dotnet nuget push output/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $NUGET_AUTH_TOKEN --skip-duplicate
         env:
