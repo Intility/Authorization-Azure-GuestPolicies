@@ -22,4 +22,18 @@ public static class DenyGuestsExtensions
 
         return services;
     }
+
+    /// <summary>
+    /// Adds a <see cref="DenyGuestsAuthorizationRequirement"/> to the current instance which requires that the current user is a member of the tenant.
+    /// </summary>
+    /// <param name="authorizationPolicyBuilder">Used for building policies during application startup.</param>
+    /// <returns>A reference to this instance after the operation has completed.</returns>
+    public static AuthorizationPolicyBuilder DenyGuests(this AuthorizationPolicyBuilder authorizationPolicyBuilder)
+    {
+        ArgumentNullException.ThrowIfNull(authorizationPolicyBuilder);
+
+        authorizationPolicyBuilder.Requirements.Add(new DenyGuestsAuthorizationRequirement());
+
+        return authorizationPolicyBuilder;
+    }
 }

@@ -58,20 +58,3 @@ public class DenyGuestsAuthorizationsHandler : AuthorizationHandler<DenyGuestsAu
         return claimsPrincipal.FindFirstValue(IdentityProvider) ?? claimsPrincipal.FindFirstValue(Idp) ?? issuer;
     }
 }
-
-/// <summary>
-/// Contains extension methods for denying guests.
-/// </summary>
-public static class DenyGuestsAuthorizationExtensions
-{
-    /// <summary>
-    /// Adds a requirement to the policy builder that denies guests.
-    /// </summary>
-    /// <param name="builder">The authorization policy builder.</param>
-    /// <returns>The same builder instance.</returns>
-    public static AuthorizationPolicyBuilder DenyGuests(this AuthorizationPolicyBuilder builder)
-    {
-        builder.AddRequirements(new DenyGuestsAuthorizationRequirement());
-        return builder;
-    }
-}
