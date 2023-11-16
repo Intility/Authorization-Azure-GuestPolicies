@@ -16,9 +16,10 @@
     <PackageTags>deny guests; deny; guests;</PackageTags>
     <PackageReadMeFile>README.md</PackageReadMeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <RepositoryUrl></RepositoryUrl>
-    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/Intility/Authorization-Azure-GuestPolicies/releases</PackageReleaseNotes>
     <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/Intility/Authorization-Azure-GuestPolicies</RepositoryUrl>
+    <PackageIcon>intility-logo.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +29,10 @@
 
   <ItemGroup>
     <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../assets/intility-logo.png" Pack="true" Visible="false" PackagePath="\" />
   </ItemGroup>
 
   <ItemGroup>
