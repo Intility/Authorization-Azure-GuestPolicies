@@ -13,3 +13,7 @@ updates:
       timezone: "Europe/Oslo"
     commit-message:
       prefix: "build:"
+    groups:
+      all:
+        patterns:
+          - "*"
