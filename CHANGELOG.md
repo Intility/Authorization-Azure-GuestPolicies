@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.7](https://github.com/intility/Authorization-Azure-GuestPolicies/compare/v2.2.6...v2.2.7) (2026-08-03)
+
+
+### Bug Fixes
+
+* Bump NSubstitute from 5.3.0 to 6.0.0 ([c9568f4](https://github.com/intility/Authorization-Azure-GuestPolicies/commit/c9568f4aaebc3ec48e856c83bbf73e787ebb8490))
+* Bump the minor-patch-updates group with 2 updates ([020197f](https://github.com/intility/Authorization-Azure-GuestPolicies/commit/020197fbad4d40c8e6d19421451e08c9b23bb198))
+
 ## [2.2.6](https://github.com/intility/Authorization-Azure-GuestPolicies/compare/v2.2.5...v2.2.6) (2026-06-29)
 
 
