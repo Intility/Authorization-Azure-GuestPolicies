@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.2.8](https://github.com/intility/Authorization-Azure-GuestPolicies/compare/v2.2.7...v2.2.8) (2026-08-31)
+
+
+### Bug Fixes
+
+* Bump the minor-patch-updates group with 3 updates ([#69](https://github.com/intility/Authorization-Azure-GuestPolicies/issues/69)) ([65e15bd](https://github.com/intility/Authorization-Azure-GuestPolicies/commit/65e15bdeb9d218df5dc6726c1468f6ce02e97337))
+* Bump xunit.runner.visualstudio from 3.1.5 to 4.0.0 ([#70](https://github.com/intility/Authorization-Azure-GuestPolicies/issues/70)) ([795fc34](https://github.com/intility/Authorization-Azure-GuestPolicies/commit/795fc341b818ff6c38ba7de555140ed74b82f0c8))
+
 ## [2.2.7](https://github.com/intility/Authorization-Azure-GuestPolicies/compare/v2.2.6...v2.2.7) (2026-08-03)
 
 
